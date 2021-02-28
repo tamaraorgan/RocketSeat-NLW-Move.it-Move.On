@@ -13,7 +13,7 @@ export default createGlobalStyle`
 
     body {
       font-family: 'Rajdhani', sans-serif;
-      background: ${props => props.theme.colors.backgroun};
+      background: ${props => props.theme.colors.backgroundLight};
       color: ${props => props.theme.colors.text};
     }
 

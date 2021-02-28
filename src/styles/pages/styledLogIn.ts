@@ -65,17 +65,21 @@ export const ContainerLogIn = styled.div`
           color: rgba(255, 255, 255, 0.7);
         }
       }
-      button {
-        background: ${props => props.theme.colors.blueDark};
-        color: ${props => props.theme.colors.white};
-        height: 4rem;
+      a {
         width: 4rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: none;
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px;
+        height: 4rem;
+        button {
+          background: ${props => props.theme.colors.blueDark};
+          color: ${props => props.theme.colors.white};
+          height: 4rem;
+          width: 4rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: none;
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+        }
       }
     }
   }

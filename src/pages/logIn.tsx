@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { FaGithub, FaArrowRight } from 'react-icons/fa'
 import { Form } from '@unform/web'
+import Link from 'next/link'
 
 import Input from '../components/Input'
 import { ContainerLogIn } from '../styles/pages/styledLogIn'
@@ -27,13 +28,14 @@ function LogIn() {
             value={user}
             onChange={e => setUser(e.target.value)}
           />
-          <button type="submit">
-            <FaArrowRight />
-          </button>
+          <Link href="/moveOn">
+            <button type="submit">
+              <FaArrowRight />
+            </button>
+          </Link>
         </Form>
       </div>
     </ContainerLogIn>
   )
 }
 export default LogIn
-

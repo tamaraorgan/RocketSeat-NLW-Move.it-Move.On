@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const SectionInput = styled.div`
   input {
-    background: var(--blue-dark);
+    background: ${props => props.theme.colors.blueDark};
     background: linear-gradient(
       90deg,
       rgba(78, 163, 224, 1) 0%,
