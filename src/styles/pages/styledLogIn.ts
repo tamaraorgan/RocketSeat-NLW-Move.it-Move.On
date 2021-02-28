@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const ContainerLogIn = styled.div`
-  background: var(--blue);
+  background: ${props => props.theme.colors.blueLight};
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -27,7 +27,7 @@ export const ContainerLogIn = styled.div`
     }
 
     > strong {
-      color: var(--white);
+      color: ${props => props.theme.colors.white};
       font-size: 2rem;
       margin-bottom: 2.5rem;
     }
@@ -49,7 +49,7 @@ export const ContainerLogIn = styled.div`
     .authgit {
       display: flex;
       input {
-        background: var(--blue-dark);
+        background: ${props => props.theme.colors.blueDark};
         background: linear-gradient(
           90deg,
           rgba(78, 163, 224, 1) 0%,
@@ -66,8 +66,8 @@ export const ContainerLogIn = styled.div`
         }
       }
       button {
-        background: var(--blue-dark);
-        color: var(--white);
+        background: ${props => props.theme.colors.blueDark};
+        color: ${props => props.theme.colors.white};
         height: 4rem;
         width: 4rem;
         display: flex;
