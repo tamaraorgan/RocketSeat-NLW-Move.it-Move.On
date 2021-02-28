@@ -3,7 +3,8 @@ import { CountdownContext } from './../contexts/CountdownContext'
 
 import {
   ContainerCountdown,
-  CountdownButton
+  CountdownButton,
+  CountdownButtonActive
 } from '../styles/components/styledCountdown'
 
 export function Countdown() {
@@ -37,13 +38,13 @@ export function Countdown() {
       ) : (
         <>
           {isActive ? (
-            <CountdownButton
+            <CountdownButtonActive
               type="button"
               className="active"
               onClick={resetCountdown}
             >
               Abandonar ciclo
-            </CountdownButton>
+            </CountdownButtonActive>
           ) : (
             <CountdownButton type="button" onClick={startCountdown}>
               Iniciar um ciclo

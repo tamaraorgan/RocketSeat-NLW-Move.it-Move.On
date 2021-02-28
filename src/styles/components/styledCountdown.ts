@@ -48,18 +48,28 @@ export const CountdownButton = styled.button`
   :hover {
     background: ${props => props.theme.colors.blueDark};
   }
-  .active {
+`
+export const CountdownButtonActive = styled.button`
+  width: 100%;
+  height: 5rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 5px;
+  background: ${props => props.theme.colors.white};
+  color: ${props => props.theme.colors.title};
+  font-size: 1.25rem;
+  font-weight: 600;
+  transition: background 0.2s;
+  :not(:disabled):hover {
+    background: ${props => props.theme.colors.red};
+    color: ${props => props.theme.colors.white};
+  }
+  :disabled {
     background: ${props => props.theme.colors.white};
-    color: ${props => props.theme.colors.title};
-    transition: background 0.2s;
-    :not(:disabled):hover {
-      background: ${props => props.theme.colors.red};
-      color: ${props => props.theme.colors.white};
-    }
-    :disabled {
-      background: ${props => props.theme.colors.white};
-      color: ${props => props.theme.colors.red};
-      cursor: not-allowed;
-    }
+    color: ${props => props.theme.colors.red};
+    cursor: not-allowed;
   }
 `

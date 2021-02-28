@@ -37,11 +37,18 @@ export default createGlobalStyle`
       list-style: none;
     }
 
-    @media (max-width: 1080px) {
+    @media (max-width: 1360px) {
       html {
-        font-size: 93.75%;
+        font-size: 80%;
       }
     }
+
+    @media (max-width: 1080px) {
+      html {
+        font-size: 70%;
+      }
+    }
+
     @media (max-width: 720px) {
       html {
         font-size: 62%;

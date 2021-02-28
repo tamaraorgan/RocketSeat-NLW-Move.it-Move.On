@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { shade } from 'polished'
 
 export const ContainerChallengeBox = styled.div`
   height: 100%;
@@ -83,13 +84,13 @@ export const ChallengeActive = styled.div`
 export const ChallengeSuceededButton = styled.button`
   background: ${props => props.theme.colors.green};
   :hover {
-    filter: brightness(0.9);
+    background: ${shade(0.2, '#4cc62b')};
   }
 `
 
 export const ChallengeFailedButton = styled.button`
   background: ${props => props.theme.colors.red};
   :hover {
-    filter: brightness(0.9);
+    background: ${shade(0.2, '#e83f5b')};
   }
 `
