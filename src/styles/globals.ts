@@ -13,8 +13,8 @@ export default createGlobalStyle`
 
     body {
       font-family: 'Rajdhani', sans-serif;
-      background-color: ${props => props.theme.colors.backgroundLight};
-      color: ${props => props.theme.colors.text};
+      background-color: #f2f3f5;
+      color: #666666;
     }
 
     body,
